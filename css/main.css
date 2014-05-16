@@ -258,6 +258,12 @@ nav a:hover {
 	box-shadow: 0 8px 40px rgba(0,0,20,.5);
 }
 
+figure.signature {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+}
+
 
 
 /* ==========================================================================
