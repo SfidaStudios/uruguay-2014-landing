@@ -24,12 +24,12 @@ $(function(){
 	function animaticUruguay()
 	{
 		$("#big-uruguay div").css({ left: 0 });
-		$("#big-uruguay div").animate({ left: -(biguruSize/2.2) }, 40000, "linear", function(){ animaticUruguay(); });
+		$("#big-uruguay div").animate({ left: -(biguruSize/2.1) }, 40000, "linear", function(){ animaticUruguay(); });
 	}
 
 	function animaticSfida()
 	{
-		$("#big-sfida div").css("left", -(bigsfidaSize/2.2));
+		$("#big-sfida div").css("left", -(bigsfidaSize/2.1));
 		$("#big-sfida div").animate({ left: 0 }, 60000, "linear", function(){ animaticSfida(); });
 	}
 

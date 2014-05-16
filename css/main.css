@@ -203,7 +203,8 @@ nav a:hover {
 	line-height: 1600px;
 	width: auto;
 	white-space: nowrap;
-	font-family: "Passion One", "Impact", "Arial Narrow", Helvetica;
+	font-family: "Roboto", "Impact", "Arial Narrow", Helvetica;
+	font-weight: 900;
 	color: transparent;
 	background: url(../res/_img1.jpg) repeat;
 	background-size: cover;
@@ -230,7 +231,9 @@ nav a:hover {
 	display: inline-block;
 	width: 200px;
 	vertical-align: top;
+	font-family: Roboto, "Arial Narrow", Helvetica;
 	font-size: 20px;
+	padding: 20px;
 }
 .main section.options i {
 	font-size: 90px;
