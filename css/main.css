@@ -141,6 +141,18 @@ nav a:hover {
 .lebackground {
 	background: #4087C0;
 	background-image: url(../img/100-100-10-monochrome.png);
+	animation-name: letsCycle;
+	animation-duration:30s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+}
+
+@keyframes letsCycle
+{
+	0% {background-color:#006;}
+	25% {background-color:#060;}
+	50% {background-color:#CC3200;}
+	75% {background-color:#603;}
 }
 
 #big-uruguay {
