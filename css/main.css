@@ -131,12 +131,14 @@ body {
 	width: auto;
 	white-space: nowrap;
 	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
-	color: transparent;
-	background: url(../res/photo_u1.jpg) repeat;
+	font-weight: 900;
+	color: #00448C;
+	background: url(../res/photo_u1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	background-clip: text;
-	opacity: 1;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: .9;
 }
 
 #big-sfida {
@@ -155,11 +157,12 @@ body {
 	white-space: nowrap;
 	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
 	font-weight: 900;
-	color: transparent;
-	background: url(../res/photo_u1.jpg) repeat;
+	color: #00448C;
+	background: url(../res/photo_u1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	opacity: .3;
 }
 
