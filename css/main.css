@@ -62,44 +62,15 @@ textarea {
    ========================================================================== */
 
 body {
+	position: absolute;
+	width: 100%;
 	height: 100%;
 	font: 16px/26px Helvetica, Helvetica Neue, Arial;
 	color: white;
 }
 
 .wrapper {
-	width: 100%;
-}
 
-/* ==============
-	MOBILE: Menu
-   ============== */
-
-nav ul {
-	margin: 0;
-	padding: 0;
-}
-
-nav a {
-	display: block;
-	margin-bottom: 10px;
-	padding: 15px 0;
-
-	text-align: center;
-	text-decoration: none;
-	font-weight: bold;
-
-	color: white;
-	background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-	color: white;
-}
-
-nav a:hover {
-	text-decoration: underline;
 }
 
 /* ==============
@@ -118,7 +89,7 @@ nav a:hover {
 
 .main aside {
 	color: white;
-	padding: 0px 5% 10px;
+	padding: 0 5% 10px;
 }
 
 .footer-container footer {
@@ -139,20 +110,11 @@ nav a:hover {
    ========================================================================== */
 
 .lebackground {
-	background: #4087C0;
-	background-image: url(../img/100-100-10-monochrome.png);
-	animation-name: letsCycle;
-	animation-duration:30s;
-	animation-direction:alternate;
-	animation-iteration-count:infinite;
-}
 
-@keyframes letsCycle
-{
-	0% {background-color:#006;}
-	25% {background-color:#060;}
-	50% {background-color:#CC3200;}
-	75% {background-color:#603;}
+	background: #4087C0;
+	background-image: url(../res/photo_u1_blur.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #big-uruguay {
@@ -164,19 +126,17 @@ nav a:hover {
 #big-uruguay div {
 	position: relative;
 	margin-top: -255px;
-	font-size: 1600px;
-	line-height: 1600px;
+	font-size: 1500px;
+	line-height: 1500px;
 	width: auto;
 	white-space: nowrap;
-	font-family: "Passion One", "Impact", "Arial Narrow", Helvetica;
+	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
 	color: transparent;
-	background: url(../res/_img1.jpg) repeat;
+	background: url(../res/photo_u1.jpg) repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
 	background-clip: text;
-	opacity: .5;
+	opacity: 1;
 }
 
 #big-sfida {
@@ -189,25 +149,28 @@ nav a:hover {
 #big-sfida div {
 	position: relative;
 	margin-top: -255px;
-	font-size: 1600px;
-	line-height: 1600px;
+	font-size: 1500px;
+	line-height: 1500px;
 	width: auto;
 	white-space: nowrap;
-	font-family: "Roboto", "Impact", "Arial Narrow", Helvetica;
+	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
 	font-weight: 900;
 	color: transparent;
-	background: url(../res/_img1.jpg) repeat;
+	background: url(../res/photo_u1.jpg) repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
 	background-clip: text;
 	opacity: .3;
 }
 
+.main-container {
+	position: relative;
+	margin-top: -300px;
+	top: 50%;
+	height: 600px;
+}
 .main {
 	text-align: center;
-	padding-top: 7%;
 }
 .main figure.logo img {
 	margin-bottom: 100px;
@@ -226,7 +189,7 @@ nav a:hover {
 	display: inline-block;
 	width: 200px;
 	vertical-align: top;
-	font-family: Roboto, "Arial Narrow", Helvetica;
+	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
 	font-size: 20px;
 	padding: 20px;
 }
@@ -238,6 +201,7 @@ nav a:hover {
 }
 .main section.options article div {
 	margin-top: 12px;
+	text-shadow: 0 0 4px #000022;
 }
 
 .main section.buttons {
@@ -264,63 +228,60 @@ figure.signature {
 	bottom: 40px;
 }
 
-
+.footer-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+.social a {
+	position: relative;
+	display: inline-block;
+	padding: 4px;
+	top: 0;
+	margin: 0 4px 0 0;
+	border-radius: 25px;
+	background: #0096D6;
+	box-shadow: 0 8px 40px rgba(0,0,10,.5);
+	transition: all 0.1s linear;
+}
+.social img {
+	vertical-align: top;
+	width: 25px;
+	height: 25px;
+}
+.social a:hover {
+	top: -5px;
+}
+.title img {
+	width: 180px;
+	margin-top: 4px;
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 768px) {
 
-/* ====================
-	INTERMEDIATE: Menu
-   ==================== */
-
-	nav a {
-		float: left;
-		width: 27%;
-		margin: 0 1.7%;
-		padding: 25px 2%;
-		margin-bottom: 0;
+	.wrapper {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.main-container {
+		top: auto;
+		margin: auto;
+		height: auto;
+	}
+	.footer-container {
+		position: relative;
 	}
 
-	nav li:first-child a {
-		margin-left: 0;
-	}
-
-	nav li:last-child a {
-		margin-right: 0;
-	}
-
-/* ========================
-	INTERMEDIATE: IE Fixes
-   ======================== */
-
-	nav ul li {
-		display: inline;
-	}
-
-	.oldie nav a {
-		margin: 0 0.7%;
-	}
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-	WIDE: CSS3 Effects
-   ==================== */
-
-	.header-container,
-	.main aside {
-		-webkit-box-shadow: 0 5px 10px #aaa;
-		   -moz-box-shadow: 0 5px 10px #aaa;
-				box-shadow: 0 5px 10px #aaa;
-	}
-
-/* ============
-	WIDE: Menu
-   ============ */
 
 	.title {
 		float: left;
@@ -329,30 +290,23 @@ figure.signature {
 	nav {
 		float: right;
 		width: 38%;
+		text-align: right;
 	}
 
-/* ============
-	WIDE: Main
-   ============ */
+	.wrapper {
+		width: 768px;
+		margin: 0 auto;
+	}
 
 	.main article {
 		width: 57%;
-	}
-
-	.main aside {
-		float: right;
-		width: 28%;
 	}
 }
 
 @media only screen and (min-width: 1140px) {
 
-/* ===============
-	Maximal Width
-   =============== */
-
 	.wrapper {
-		width: 1026px; /* 1140px - 10% for margins */
+		width: 1026px;
 		margin: 0 auto;
 	}
 }
@@ -417,71 +371,4 @@ figure.signature {
 
 .clearfix {
 	*zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-	* {
-		background: transparent !important;
-		color: #000 !important;
-		box-shadow: none !important;
-		text-shadow: none !important;
-	}
-
-	a,
-	a:visited {
-		text-decoration: underline;
-	}
-
-	a[href]:after {
-		content: " (" attr(href) ")";
-	}
-
-	abbr[title]:after {
-		content: " (" attr(title) ")";
-	}
-
-	.ir a:after,
-	a[href^="javascript:"]:after,
-	a[href^="#"]:after {
-		content: "";
-	}
-
-	pre,
-	blockquote {
-		border: 1px solid #999;
-		page-break-inside: avoid;
-	}
-
-	thead {
-		display: table-header-group;
-	}
-
-	tr,
-	img {
-		page-break-inside: avoid;
-	}
-
-	img {
-		max-width: 100% !important;
-	}
-
-	@page {
-		margin: 0.5cm;
-	}
-
-	p,
-	h2,
-	h3 {
-		orphans: 3;
-		widows: 3;
-	}
-
-	h2,
-	h3 {
-		page-break-after: avoid;
-	}
 }
