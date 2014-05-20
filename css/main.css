@@ -69,9 +69,6 @@ body {
 	color: white;
 }
 
-.wrapper {
-
-}
 
 /* ==============
 	MOBILE: Main
@@ -180,7 +177,6 @@ body {
 	width: 250px;
 	height: 250px;
 	border-radius: 125px;
-	padding: 2px;
 	background: #0096D6;
 	box-shadow: 0 8px 40px rgba(0,0,20,.5);
 }
