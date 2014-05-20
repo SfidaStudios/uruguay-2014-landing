@@ -120,15 +120,16 @@ body {
 
 #big-uruguay {
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	z-index: 6;
 }
 #big-uruguay div {
 	position: relative;
-	margin-top: -255px;
-	font-size: 1500px;
-	line-height: 1500px;
+    left: 0;
+    bottom: 0;
+	font-size: 800px;
+    line-height: 100%;
 	width: auto;
 	white-space: nowrap;
 	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
@@ -150,10 +151,10 @@ body {
 	overflow: hidden;
 }
 #big-sfida div {
-	position: relative;
-	margin-top: -255px;
-	font-size: 1500px;
-	line-height: 1500px;
+	position: absolute;
+	top: -8%;
+	font-size: 1400px;
+    line-height: 100%;
 	width: auto;
 	white-space: nowrap;
 	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
@@ -169,7 +170,7 @@ body {
 
 .main-container {
 	position: relative;
-	margin-top: -300px;
+	margin-top: -350px;
 	top: 50%;
 	height: 600px;
 }
