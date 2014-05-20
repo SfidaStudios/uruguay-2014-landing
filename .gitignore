@@ -1,0 +1,14 @@
+.project
+.DS_Store
+Thumbs.db
+_logs/*
+publications/*
+audio/*
+photobase/*
+*sublime*
+sftp-config.json
+.settings
+*.espressostorage
+*.esproj
+.watsonrc
+

@@ -23,6 +23,10 @@ html {
 	text-shadow: none;
 }
 
+a, a:link, a:visited, a:hover  {
+	color: #fff;
+	text-decoration: none;
+}
 hr {
 	display: block;
 	height: 1px;
