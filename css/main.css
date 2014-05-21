@@ -120,15 +120,45 @@ body {
 
 #big-uruguay {
 	position: absolute;
-	bottom: 0;
+	top: 0;
+    bottom: 0;
 	left: 0;
+    right: 0;
 	z-index: 6;
 }
 #big-uruguay div {
-	position: relative;
+	position: absolute;
     left: 0;
-    bottom: 0;
+    top: 0;
+    bottom: -16%;
 	font-size: 800px;
+    line-height: 140%;
+	width: auto;
+	white-space: nowrap;
+	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
+	font-weight: 900;
+	color: #00448C;
+	background: url(../res/photo_u1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	opacity: .7;
+}
+
+#big-sfida {
+	position: absolute;
+	top: 0;
+    bottom: 0;
+	left: 0;
+    right: 0;
+	z-index: 7;
+}
+#big-sfida div {
+	position: absolute;
+	top: -4%;
+    bottom: 0;
+	font-size: 1400px;
     line-height: 100%;
 	width: auto;
 	white-space: nowrap;
@@ -140,32 +170,7 @@ body {
 	background-attachment: fixed;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	opacity: .9;
-}
-
-#big-sfida {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 4;
-	overflow: hidden;
-}
-#big-sfida div {
-	position: absolute;
-	top: -8%;
-	font-size: 1400px;
-    line-height: 100%;
-	width: auto;
-	white-space: nowrap;
-	font-family: Roboto, Impact, "Arial Narrow", Helvetica;
-	font-weight: 900;
-	color: #00448C;
-	background: url(../res/photo_u1.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	opacity: .3;
+	opacity: .4;
 }
 
 .main-container {
