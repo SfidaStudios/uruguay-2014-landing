@@ -1,5 +1,4 @@
 $(function(){
-
     $(window).on('resize orientationchange', resizer);
     resizer();
 });
@@ -8,7 +7,6 @@ function resizer()
 {
     // Tomamos el tamaño del viewport
     var viewSize = $("body").height();
-    console.log(viewSize);
     // Calculamos el tamaño ideal de la fuente
 //    var fontSize = Math.max(Math.min(viewSize, 800), 500);
     var fontSize = viewSize/1.51;
