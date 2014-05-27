@@ -1,6 +1,49 @@
 $(function(){
     $(window).on('resize orientationchange', resizer);
     resizer();
+
+    // Android?
+    var NastyBrowserSniffing =
+    {
+        ua: navigator.userAgent.toLowerCase(),
+        init: function()
+        {
+            var isAndroid = NastyBrowserSniffing.ua.indexOf("android") > -1;
+            //Wops ABORT
+            if (isAndroid) {
+                $("#big-uruguay div,#big-sfida div")
+                .css("background", "none");
+            }
+        }
+    };
+    NastyBrowserSniffing.init();
+    
+});
+
+$("document").ready(function()
+{
+    $("body")
+    .find(".main section.options article")
+    .each(function(e){
+        var that = this;
+        setTimeout(function(){
+            $(that)
+            .removeClass("hidden")
+            .addClass("animated fadeInUp");
+        }, (e+1)*200);
+    });
+    
+    setTimeout(function() {
+        $(".main-container .logo")
+        .removeClass("hidden")
+        .addClass(" animated flip");
+    }, 900);
+    
+    setTimeout(function() {
+        $(".footer-container")
+        .removeClass("hidden")
+        .addClass("animated fadeInUp");
+    }, 1000);
 });
 
 function resizer()
@@ -31,16 +74,18 @@ function resizer()
     // Reaplicamos
     $("#big-uruguay")
     .css({ overflow: "hidden" })
+    .css({ width: biguruSize })
     .find("div")
     .css({ width: biguruSize });
 
     $("#big-sfida")
     .css({ overflow: "hidden" })
+    .css({ width: bigsfidaSize })
     .find("div")
     .css({ width: bigsfidaSize });
 
-    animaticUruguay(biguruSize);
-    animaticSfida(bigsfidaSize);
+//    animaticUruguay(biguruSize);
+//    animaticSfida(bigsfidaSize);
 }
 
 function animaticUruguay(biguruSize)
